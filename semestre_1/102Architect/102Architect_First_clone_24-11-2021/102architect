@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+import math
+from sys import argv
+from sys import exit
+
+if (len(argv) < 5):
+    exit()
+
+def translation():
+    Mpos = [argv[1], argv[2], 1]
+    Mtrans = [[1, 0, argv[3]], [0, 1, argv[4]], [0, 0, 1]]
+    print(f"{float(Mpos[0]):.2f}     {float(Mtrans[0][0]):.2f}  {float(Mtrans[0][1]):.2f}  {float(Mtrans[0][2]):.2f}")
+    print(f"{float(Mpos[1]):.2f}  *  {float(Mtrans[1][0]):.2f}  {float(Mtrans[1][1]):.2f}  {float(Mtrans[1][2]):.2f}")
+    print(f"{float(Mpos[2]):.2f}     {float(Mtrans[2][0]):.2f}  {float(Mtrans[2][1]):.2f}  {float(Mtrans[2][2]):.2f}")
+    print(" ")
+    print(f"{float(Mpos[0]) * float(Mtrans[0][0]) + float(Mpos[0]) * float(Mtrans[0][1]) + float(Mpos[0]) * float(Mtrans[0][2]):.2f}")
+    print(f"{float(Mpos[1]) * float(Mtrans[1][0]) + float(Mpos[1]) * float(Mtrans[1][1]) + float(Mpos[1]) * float(Mtrans[1][2]):.2f}")
+    print(f"{float(Mpos[2]) * float(Mtrans[2][0]) + float(Mpos[2]) * float(Mtrans[2][1]) + float(Mpos[2]) * float(Mtrans[2][2]):.2f}")
+    print(" ")
+    print(" ")
+
+translation()
+
+if (len(argv) < 7):
+    exit()
+
+def scale():
+    Mpos = [argv[1], argv[2], 1]
+    Mtrans = [[ argv[5], 0, 0], [0, argv[6], 0], [0, 0, 1]]
+    print(f"{float(Mpos[0]):.2f}     {float(Mtrans[0][0]):.2f}  {float(Mtrans[0][1]):.2f}  {float(Mtrans[0][2]):.2f}")
+    print(f"{float(Mpos[1]):.2f}  *  {float(Mtrans[1][0]):.2f}  {float(Mtrans[1][1]):.2f}  {float(Mtrans[1][2]):.2f}")
+    print(f"{float(Mpos[2]):.2f}     {float(Mtrans[2][0]):.2f}  {float(Mtrans[2][1]):.2f}  {float(Mtrans[2][2]):.2f}")
+    print(" ")
+    print(f"{float(Mpos[0]) * float(Mtrans[0][0]) + float(Mpos[0]) * float(Mtrans[0][1]) + float(Mpos[0]) * float(Mtrans[0][2]):.2f}")
+    print(f"{float(Mpos[1]) * float(Mtrans[1][0]) + float(Mpos[1]) * float(Mtrans[1][1]) + float(Mpos[1]) * float(Mtrans[1][2]):.2f}")
+    print(f"{float(Mpos[2]) * float(Mtrans[2][0]) + float(Mpos[2]) * float(Mtrans[2][1]) + float(Mpos[2]) * float(Mtrans[2][2]):.2f}")
+    print(" ")
+    print(" ")
+
+scale()
+
+if (len(argv) < 8):
+    exit()
+
+
+def rotation():
+    Mpos = [argv[1], argv[2], 1]
+    Mtrans = [[ float(math.cos(argv[7])), float(-(math.sin(argv[7]))), float(0)], [float(math.sin(argv[7])), float(math.cos(argv[7])), float(0)], [float(0), float(0), float(1)]]
+    print(Mpos[0], "   ", Mtrans[0][0], Mtrans[0][1], Mtrans[0][2])
+    print(Mpos[1], " * ", Mtrans[1][0], Mtrans[1][1], Mtrans[1][2])
+    print(Mpos[2], "   ", Mtrans[2][0], Mtrans[2][1], Mtrans[2][2])
+    print(" ")
+    print(int(Mpos[0]) * int(Mtrans[0][0]) + int(Mpos[0]) * int(Mtrans[0][1]) + int(Mpos[0]) * int(Mtrans[0][2]))
+    print(int(Mpos[1]) * int(Mtrans[1][0]) + int(Mpos[1]) * int(Mtrans[1][1]) + int(Mpos[1]) * int(Mtrans[1][2]))
+    print(int(Mpos[2]) * int(Mtrans[2][0]) + int(Mpos[2]) * int(Mtrans[2][1]) + int(Mpos[2]) * int(Mtrans[2][2]))
+    print(" ")
+    print(" ")
+
+rotation()
