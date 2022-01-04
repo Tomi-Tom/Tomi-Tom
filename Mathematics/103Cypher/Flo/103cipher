@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import math
+from collections import Counter
+from sys import argv
+from sys import exit
+
+def message_matrix(msg : str, x : int) -> dict:
+    matrix = []
+    tmp = []
+    for char in msg:
+        tmp.append(ord(char))
+        if (len(tmp) == x):
+            matrix.append(tmp)
+            tmp = []
+    if (len(tmp) != 0):
+        while (len(tmp) < 3):
+            tmp.append(0)
+        matrix.append(tmp)
+    return (matrix)
+
+print(message_matrix("Bonsoir", 3))

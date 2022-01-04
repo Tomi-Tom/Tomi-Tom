@@ -1,0 +1,223 @@
+#!/usr/bin/env python3
+import math
+from collections import Counter
+from sys import argv
+from sys import exit
+
+def translation(mat : dict, x : int, y : int) -> dict:
+    tmp = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+    tmp[0][2] = float(x)
+    tmp[1][2] = float(y)
+
+    a = (float(tmp[0][0]) * mat[0][0]) + (float(tmp[0][1]) * mat[1][0]) + (float(tmp[0][2]) * mat[2][0])
+    b = (float(tmp[0][0]) * mat[0][1]) + (float(tmp[0][1]) * mat[1][1]) + (float(tmp[0][2]) * mat[2][1])
+    c = (float(tmp[0][0]) * mat[0][2]) + (float(tmp[0][1]) * mat[1][2]) + (float(tmp[0][2]) * mat[2][2])
+
+    d = (float(tmp[1][0]) * mat[0][0]) + (float(tmp[1][1]) * mat[1][0]) + (float(tmp[1][2]) * mat[2][0])
+    e = (float(tmp[1][0]) * mat[0][1]) + (float(tmp[1][1]) * mat[1][1]) + (float(tmp[1][2]) * mat[2][1])
+    f = (float(tmp[1][0]) * mat[0][2]) + (float(tmp[1][1]) * mat[1][2]) + (float(tmp[1][2]) * mat[2][2])
+
+    g = (float(tmp[2][0]) * mat[0][0]) + (float(tmp[2][1]) * mat[1][0]) + (float(tmp[2][2]) * mat[2][0])
+    h = (float(tmp[2][0]) * mat[0][1]) + (float(tmp[2][1]) * mat[1][1]) + (float(tmp[2][2]) * mat[2][1])
+    i = (float(tmp[2][0]) * mat[0][2]) + (float(tmp[2][1]) * mat[1][2]) + (float(tmp[2][2]) * mat[2][2])
+
+    mat[0][0] = a
+    mat[0][1] = b
+    mat[0][2] = c
+
+    mat[1][0] = d
+    mat[1][1] = e
+    mat[1][2] = f
+
+    mat[2][0] = g
+    mat[2][1] = h
+    mat[2][2] = i
+    return mat
+
+def scaling(mat : dict, x : int, y : int) -> dict:
+    tmp = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+    tmp[0][0] = float(x)
+    tmp[1][1] = float(y)
+
+    a = (float(tmp[0][0]) * mat[0][0]) + (float(tmp[0][1]) * mat[1][0]) + (float(tmp[0][2]) * mat[2][0])
+    b = (float(tmp[0][0]) * mat[0][1]) + (float(tmp[0][1]) * mat[1][1]) + (float(tmp[0][2]) * mat[2][1])
+    c = (float(tmp[0][0]) * mat[0][2]) + (float(tmp[0][1]) * mat[1][2]) + (float(tmp[0][2]) * mat[2][2])
+
+    d = (float(tmp[1][0]) * mat[0][0]) + (float(tmp[1][1]) * mat[1][0]) + (float(tmp[1][2]) * mat[2][0])
+    e = (float(tmp[1][0]) * mat[0][1]) + (float(tmp[1][1]) * mat[1][1]) + (float(tmp[1][2]) * mat[2][1])
+    f = (float(tmp[1][0]) * mat[0][2]) + (float(tmp[1][1]) * mat[1][2]) + (float(tmp[1][2]) * mat[2][2])
+
+    g = (float(tmp[2][0]) * mat[0][0]) + (float(tmp[2][1]) * mat[1][0]) + (float(tmp[2][2]) * mat[2][0])
+    h = (float(tmp[2][0]) * mat[0][1]) + (float(tmp[2][1]) * mat[1][1]) + (float(tmp[2][2]) * mat[2][1])
+    i = (float(tmp[2][0]) * mat[0][2]) + (float(tmp[2][1]) * mat[1][2]) + (float(tmp[2][2]) * mat[2][2])
+
+    mat[0][0] = a
+    mat[0][1] = b
+    mat[0][2] = c
+
+    mat[1][0] = d
+    mat[1][1] = e
+    mat[1][2] = f
+
+    mat[2][0] = g
+    mat[2][1] = h
+    mat[2][2] = i
+    return mat
+
+def rotation(mat : dict, angle : int) -> dict:
+    tmp = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
+    tmp[0][0] = float(math.cos(math.radians(angle)))
+    tmp[0][1] = float(-math.sin(math.radians(angle)))
+    tmp[1][0] = float(math.sin(math.radians(angle)))
+    tmp[1][1] = float(math.cos(math.radians(angle)))
+
+    a = (float(tmp[0][0]) * mat[0][0]) + (float(tmp[0][1]) * mat[1][0]) + (float(tmp[0][2]) * mat[2][0])
+    b = (float(tmp[0][0]) * mat[0][1]) + (float(tmp[0][1]) * mat[1][1]) + (float(tmp[0][2]) * mat[2][1])
+    c = (float(tmp[0][0]) * mat[0][2]) + (float(tmp[0][1]) * mat[1][2]) + (float(tmp[0][2]) * mat[2][2])
+
+    d = (float(tmp[1][0]) * mat[0][0]) + (float(tmp[1][1]) * mat[1][0]) + (float(tmp[1][2]) * mat[2][0])
+    e = (float(tmp[1][0]) * mat[0][1]) + (float(tmp[1][1]) * mat[1][1]) + (float(tmp[1][2]) * mat[2][1])
+    f = (float(tmp[1][0]) * mat[0][2]) + (float(tmp[1][1]) * mat[1][2]) + (float(tmp[1][2]) * mat[2][2])
+
+    g = (float(tmp[2][0]) * mat[0][0]) + (float(tmp[2][1]) * mat[1][0]) + (float(tmp[2][2]) * mat[2][0])
+    h = (float(tmp[2][0]) * mat[0][1]) + (float(tmp[2][1]) * mat[1][1]) + (float(tmp[2][2]) * mat[2][1])
+    i = (float(tmp[2][0]) * mat[0][2]) + (float(tmp[2][1]) * mat[1][2]) + (float(tmp[2][2]) * mat[2][2])
+
+    mat[0][0] = a
+    mat[0][1] = b
+    mat[0][2] = c
+
+    mat[1][0] = d
+    mat[1][1] = e
+    mat[1][2] = f
+
+    mat[2][0] = g
+    mat[2][1] = h
+    mat[2][2] = i
+    return mat
+
+def reflection(mat : dict, angle : int) -> dict:
+    tmp = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
+    tmp[0][0] = float((2 * (math.cos(math.radians(angle)) ** 2)) - 1)
+    tmp[0][1] = float((2 * (math.sin(math.radians(angle)))) * (math.cos(math.radians(angle))))
+    tmp[1][0] = float((2 * (math.sin(math.radians(angle)))) * (math.cos(math.radians(angle))))
+    tmp[1][1] = float(-((2 * (math.cos(math.radians(angle)) ** 2)) - 1))
+
+    a = (float(tmp[0][0]) * mat[0][0]) + (float(tmp[0][1]) * mat[1][0]) + (float(tmp[0][2]) * mat[2][0])
+    b = (float(tmp[0][0]) * mat[0][1]) + (float(tmp[0][1]) * mat[1][1]) + (float(tmp[0][2]) * mat[2][1])
+    c = (float(tmp[0][0]) * mat[0][2]) + (float(tmp[0][1]) * mat[1][2]) + (float(tmp[0][2]) * mat[2][2])
+
+    d = (float(tmp[1][0]) * mat[0][0]) + (float(tmp[1][1]) * mat[1][0]) + (float(tmp[1][2]) * mat[2][0])
+    e = (float(tmp[1][0]) * mat[0][1]) + (float(tmp[1][1]) * mat[1][1]) + (float(tmp[1][2]) * mat[2][1])
+    f = (float(tmp[1][0]) * mat[0][2]) + (float(tmp[1][1]) * mat[1][2]) + (float(tmp[1][2]) * mat[2][2])
+
+    g = (float(tmp[2][0]) * mat[0][0]) + (float(tmp[2][1]) * mat[1][0]) + (float(tmp[2][2]) * mat[2][0])
+    h = (float(tmp[2][0]) * mat[0][1]) + (float(tmp[2][1]) * mat[1][1]) + (float(tmp[2][2]) * mat[2][1])
+    i = (float(tmp[2][0]) * mat[0][2]) + (float(tmp[2][1]) * mat[1][2]) + (float(tmp[2][2]) * mat[2][2])
+
+    mat[0][0] = a
+    mat[0][1] = b
+    mat[0][2] = c
+
+    mat[1][0] = d
+    mat[1][1] = e
+    mat[1][2] = f
+
+    mat[2][0] = g
+    mat[2][1] = h
+    mat[2][2] = i
+    return mat
+
+def count_space(mat : dict, i : int, j : int) -> int:
+    count = 4
+    if mat[i][j] < 0:
+        count += 1
+    if mat[i][j] > 10:
+        count += 1
+    if mat[i][j] > 100:
+        count += 1
+    return 8 - count
+
+def usage():
+    print("USAGE")
+    print("    ./102architect x y transfor 1 argv11 [arg12] [transfo2 arg12 [arg22]] ...")
+    print("\nDESCRIPTION")
+    print("    x   abscissa of the original point")
+    print("    y   ordinate of the original point")
+    print("\n    transfo arg1 [arg2]")
+    print("    -t i j  translation along vector (i, j)")
+    print("    -z m n  scaling by factors m (x-axis) and n (y-axis)")
+    print("    -r d    rotation centered in O by a d degree angle")
+    print("    -s d    reflection over the axis passing through O with an inclination")
+    print("            angle of d degrees")
+    exit(0)
+
+def error_handling() -> int:
+    argc = 0
+    count = 3
+    for sen in argv:
+        argc += 1
+    if argc < 2 or argc == 3:
+        exit(84)
+    if argc == 2 and argv[1] != "-h":
+        exit(84)
+    for sen in argv[1:3]:
+        for c in sen:
+            if (c < '0' or c > '9') and (c != '-') and (c != "."):
+                exit(84)
+    for sen in argv[3:]:
+        if sen != "-t" and sen != "-s" and sen != "-z" and sen != "-r":
+            for c in sen:
+                if (c < '0' or c > '9') and (c != '-') and (c != "."):
+                    exit(84)
+        if sen == "-t":
+            count += 3
+        if sen == "-z":
+            count += 3
+        if sen == "-s":
+            count += 2
+        if sen == "-r":
+            count += 2
+    if count != argc and (argv[1] != "-h"):
+        exit(84)
+
+def base():
+    error_handling()
+    mat = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+    pos_fin = [0, 0, 0]
+    list = [0, 0, 0]
+    i = 3
+
+    if argv[1][0] == '-' and argv[1][1] == 'h':
+        usage()
+    pos = [argv[1], argv[2], 1]
+    for sen in argv[3:]:
+        if sen == "-t":
+            print(f"Translation along vector ({argv[i + 1]}, {argv[i + 2]})")
+            mat = translation(mat, argv[i + 1], argv[i + 2])
+        if sen == "-z":
+            print(f"Scaling by factors {(argv[i + 1])} and {argv[i + 2]}")
+            mat = scaling(mat, argv[i + 1], argv[i + 2])
+        if sen == "-r":
+            print(f"Rotation by a {argv[i + 1]} degree angle")
+            mat = rotation(mat, float(argv[i + 1]))
+        if sen == "-s":
+            print(f"Reflection over an axis with an inclination angle of {argv[i + 1]} degrees")
+            mat = reflection(mat, float(argv[i + 1]))
+        i += 1
+
+    pos_fin[0] = ((float(pos[0]) * mat[0][0]) + (float(pos[1]) * mat[0][1]) + 1 * mat[0][2])
+    pos_fin[1] = ((float(pos[0]) * mat[1][0]) + (float(pos[1]) * mat[1][1]) + 1 * mat[1][2])
+
+    for i in range (0, 3):
+        for j in range (0, 3):
+            print(f"{float(mat[i][j]):.2f}", end = '')
+            if j != 2:
+                for k in range (0, count_space(mat, i, j)):
+                    print(" ", end = '')
+        print('')
+    print(f"({float(pos[0]):.2f}, {float(pos[1]):.2f}) => ({pos_fin[0]:.2f}, {pos_fin[1]:.2f})")
+
+base()
