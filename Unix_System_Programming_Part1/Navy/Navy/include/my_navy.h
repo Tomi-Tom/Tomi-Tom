@@ -40,4 +40,6 @@ int file_verification(char *buffer);
 
 int main_game(tabcase **tab, tabcase **enemy_tab, int mode);
 
+int game_finished(tabcase **game, int is_my_turn);
+
 #endif /* !my_navy_h */

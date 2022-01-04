@@ -15,7 +15,7 @@ int is_valid_pick(char *pick)
     if (pick[1] < '1' || pick[1] > '8') {
         return 84;
     }
-    return 0;
+    return 1;
 }
 
 int my_str_is_eq(char *str1, char *str2)

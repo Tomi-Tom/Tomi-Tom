@@ -63,11 +63,11 @@ void message(char *mes, int id)
 {
     int i = 0;
 
-    usleep(1);
+    usleep(1000);
     send_signal_car('*', id);
     while (mes[i]) {
         send_signal_car(mes[i], id);
-        usleep(1);
+        usleep(2);
         i++;
     }
     send_signal_car('+', id);

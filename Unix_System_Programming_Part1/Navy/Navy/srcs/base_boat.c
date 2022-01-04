@@ -99,4 +99,5 @@ void print_tab(tabcase **tab)
         }
         my_putchar('\n');
     }
+    my_putchar('\n');
 }

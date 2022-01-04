@@ -15,20 +15,22 @@ SRC_PATH		=			srcs/
 
 TEST_PATH		=			tests/
 
-SRC				=			main.c						\
-							$(SRC_PATH)comunication.c	\
-							$(SRC_PATH)comunication2.c	\
-							$(SRC_PATH)handler.c		\
-							$(SRC_PATH)connect.c		\
-							$(SRC_PATH)base_boat.c		\
-							$(SRC_PATH)game.c			\
-							$(SRC_PATH)utils.c			\
+SRC				=			main.c								\
+							$(SRC_PATH)comunication.c			\
+							$(SRC_PATH)comunication2.c			\
+							$(SRC_PATH)handler.c				\
+							$(SRC_PATH)connect.c				\
+							$(SRC_PATH)base_boat.c				\
+							$(SRC_PATH)game.c					\
+							$(SRC_PATH)utils.c					\
+							$(SRC_PATH)endgame.c				\
 
-SRC_TEST		=			$(SRC_PATH)comunication.c	\
-							$(SRC_PATH)utils.c			\
-							$(TEST_PATH)test_my_atob.c	\
-							$(TEST_PATH)test_my_btoa.c	\
-							$(TEST_PATH)test_my_str_is_eq.c	\
+SRC_TEST		=			$(SRC_PATH)comunication.c			\
+							$(SRC_PATH)utils.c					\
+							$(TEST_PATH)test_my_atob.c			\
+							$(TEST_PATH)test_my_btoa.c			\
+							$(TEST_PATH)test_my_str_is_eq.c		\
+							$(TEST_PATH)test_is_valid_pick.c	\
 
 OBJ				=			$(SRC:.c=.o)
 
