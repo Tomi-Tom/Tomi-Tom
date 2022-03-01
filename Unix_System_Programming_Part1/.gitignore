@@ -1,6 +1,0 @@
-*.o
-*.gcna
-*.gcno
-unit_test
-navy
-include/my.h

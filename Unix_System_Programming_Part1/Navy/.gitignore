@@ -1,9 +1,0 @@
-*.o
-*.gcna
-*.gcno
-libmy.a
-lib/libmy.a
-lib/my/libmy.a
-unit_test
-navy
-include/my.h
