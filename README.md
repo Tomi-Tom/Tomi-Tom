@@ -1,9 +1,5 @@
 # Hi there 👋
 
-My name is Tom, i'm 21 and i'm an IT Student at **{EPITECH}**
-
-<img src="https://newsroom.ionis-group.com/wp-content/uploads/2021/10/EPITECH-TECHNOLOGY-QUADRI-2021.png">
-
 ## Stats
 
 <!--
