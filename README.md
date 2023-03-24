@@ -33,6 +33,17 @@
   
 </div>
 
+## GitHub Profile
+
+<div align="center">
+  
+  [![DenverCoder1's github streak](https://github-readme-streak-stats.herokuapp.com/?user=Tomi-Tom&theme=blue-green)](https://github.com/Tomi-Tom/github-readme-streak-stats)
+  
+  [![Ryo-ma's github trophy](https://github-profile-trophy.vercel.app/?username=Tomi-Tom&row=2)](https://github.com/Tomi-Tom/github-profile-trophy)
+  
+</div>
+
+
 ## Profile
 
 **<a href="https://www.codingame.com/profile/c643a0a08db226de31351613b37d42ef0635484">Coding Game</a>** <br/>
