@@ -32,15 +32,12 @@
   
   ![Node](https://img.shields.io/badge/Node.JS-339933?style=for-the-badge&logo=node.js&logoColor=white)
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-  ![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS%20-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+  ![NextJS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
   ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
   <br/>
   ![C](https://img.shields.io/badge/C%20-%232370ED.svg?style=for-the-badge&logo=c&logoColor=white)
   ![C++](https://img.shields.io/badge/C++%20-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
   ![Python](https://img.shields.io/badge/Python%20-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white)
-  ![Haskell](https://img.shields.io/badge/haskell-5D4F85?style=for-the-badge&logo=haskell&logoColor=white)
   ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
   ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
  
@@ -64,14 +61,6 @@
   
 </div>
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"><b> Extra </b>
-
-<div align="center">
-  
-  ![Terminal](https://img.shields.io/badge/Terminal-%23054020?style=for-the-badge&logo=gnu-bash&logoColor=white)
-  ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)   
-  
-</div>
 
 ## <picture><img src = "https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width = 50px></picture> GitHub Profile
 
@@ -79,23 +68,17 @@
   
   [![Tomi-Tom's github streak](https://github-readme-streak-stats.herokuapp.com/?user=Tomi-Tom&theme=blue-green)](https://github.com/Tomi-Tom/github-readme-streak-stats)
   
-  [![Tomi-Tom's github trophy](https://github-profile-trophy.vercel.app/?username=Tomi-Tom&row=2)](https://github.com/Tomi-Tom/github-profile-trophy)
+  [![Tomi-Tom's github trophy](https://github-profile-trophy.vercel.app/?username=Tomi-Tom&row=1)](https://github.com/Tomi-Tom/github-profile-trophy)
   
 </div>
 
 
 ## <picture><img src = "https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width = 50px></picture> External profiles
 
-**<a href="https://www.codingame.com/profile/c643a0a08db226de31351613b37d42ef0635484">Coding Game</a>** <br/>
-**<a href="https://tomfolio.vercel.app/">Portfolio</a>**
-
-
-
+| [<img src="https://github.com/Tomi-Tom.png?size=85" width=85><br><sub>Portfolio</sub>](https://tomfolio.vercel.app/) | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" width=85><br><sub>Linkedin</sub>](https://www.linkedin.com/in/tom-bp/) |
+|:---:| :---: |
 
 <!--    Ressources     -->
-
-
-
 
 [Epitech]: https://img.shields.io/badge/Epitech-1a2b6d?style=for-the-badge&logo=/e/&logoColor=whit
 [Epitech-url]: https://www.epitech.eu/
