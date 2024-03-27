@@ -75,7 +75,7 @@
 
 ## <picture><img src = "https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width = 50px></picture> External profiles
 
-| [<img src="https://github.com/Tomi-Tom/Tomi-Tom/assets/91875715/1f323f07-ad0e-47f9-a56f-db28a56ce2d3" width=85><br><sub>Portfolio (WIP)</sub>](https://tomfolio.vercel.app/) | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" width=85><br><sub>Linkedin</sub>](https://www.linkedin.com/in/tom-bp/) | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" width=85><br><sub>Instagram</sub>](https://www.instagram.com/tombp_dev/?hl=fr) |
+| [<img src="https://github.com/Tomi-Tom/Tomi-Tom/assets/91875715/1f323f07-ad0e-47f9-a56f-db28a56ce2d3" width=85><br><sub>Portfolio (WIP)</sub>](https://www.tombp.fr/) | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" width=85><br><sub>Linkedin</sub>](https://www.linkedin.com/in/tom-bp/) | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" width=85><br><sub>Instagram</sub>](https://www.instagram.com/tombp_dev/?hl=fr) |
 |:---:|:---:|:---:|
 
 <!--    Ressources     -->
