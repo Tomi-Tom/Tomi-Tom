@@ -16,8 +16,9 @@
   <br/>
   <a href="https://github.com/0xabdulkhalid/">
     
-  <img src="https://github-readme-stats.vercel.app/api?username=Tomi-Tom&show_icons=true&count_private=true&theme=radical"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tomi-Tom&theme=radical&layout=compact&langs_count=6"/>
+  <!-- Utilisation d'une instance alternative plus stable -->
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=Tomi-Tom&show_icons=true&count_private=true&theme=radical"/>
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Tomi-Tom&theme=radical&layout=compact&langs_count=6"/>
     
   </a>
   <br/>
@@ -68,7 +69,7 @@
   
   [![Tomi-Tom's github streak](https://github-readme-streak-stats.herokuapp.com/?user=Tomi-Tom&theme=blue-green)](https://github.com/Tomi-Tom/github-readme-streak-stats)
   
-  [![Tomi-Tom's github trophy](https://github-profile-trophy.vercel.app/?username=Tomi-Tom&row=1)](https://github.com/Tomi-Tom/github-profile-trophy)
+  [![Tomi-Tom's github trophy](https://github-profile-trophy.screw-hand.vercel.app/?username=Tomi-Tom&row=1)](https://github.com/Tomi-Tom/github-profile-trophy)
   
 </div>
 
